@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "Open in Steam",
+		"description": "Name of the extension."
+	},
+	"extensionDescription": {
+		"message": "Fügt Steam Webseiten einen Knopf hinzu, um die Seite im Steam Client zu öffnen.",
+		"description": "Description of the extension."
+	},
+	"steamButtonText" : {
+		"message": "In Steam öffnen",
+		"description": "Text of the Button"
+	}
+}
