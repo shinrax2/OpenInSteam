@@ -1,35 +1,34 @@
 {
-   "manifest_version":2,
-   "name":"__MSG_extensionName__",
-   "version":"1.2",
-   "author":"shinrax2",
-   "description":"__MSG_extensionDescription__",
-   "default_locale": "en",
-   
-   "content_scripts":[
-    {
-	    "exclude_matches":[
-            "*://help.steampowered.com/*",
-			"*://steamcommunity.com/openid/login*"
-        ],
-        "matches":[
-            "*://*.steamcommunity.com/*",
-            "*://*.steampowered.com/*"
-        ],
-        "js":[
+	"manifest_version": 2,
+	"name": "__MSG_extensionName__",
+	"version": "1.2",
+	"author": "shinrax2",
+	"description": "__MSG_extensionDescription__",
+	"default_locale": "en",
+	
+	"content_scripts": [{
+		"exclude_matches": [
+			"*://steamcommunity.com/login*",
+			"*://steamcommunity.com/openid/login*",
+			"*://help.steampowered.com/*/wizard/Login*",
+			"*://*.steampowered.com/login*",
+			"*://store.steampowered.com/about*"
+		],
+		"matches": [
+			"*://steamcommunity.com/*",
+			"*://*.steampowered.com/*"
+		],
+		"js": [
 			"openinsteam.js"
-        ]
-      }
-    ],
-   
-   "icons" : {
-     "48" : "icons/48x48.png",
-	 "96" : "icons/96x96.png"
+		]
+	}],
+	"icons" : {
+		"48" : "icons/48x48.png",
+		"96" : "icons/96x96.png"
 	},
-   
-   "applications": {
+	"applications": {
 		"gecko": {
 			"id": "openinsteampublic@shinrax2"
 		}
-	} 
+	}
 }
