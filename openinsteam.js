@@ -1,26 +1,20 @@
+'use strict';
+
 if(!browser) {
-      var browser = chrome // to support chrome
+	var browser = chrome // to support chrome
 }
-var btntxt = browser.i18n.getMessage("steamButtonText")
-var e = document.getElementsByClassName("logo")[0]
-var f = document.getElementsByClassName("footer_content")[0]
-var a = document.createElement("a")
-var ref = document.createAttribute("href")
-ref.value = "steam://openurl/"+encodeURI(window.location)
-var btn = document.createElement("button")
-var t = document.createTextNode(btntxt)
-btn.append(t)
-a.setAttributeNode(ref)
-a.append(btn)
-e.append(a)
-var span = document.createElement("span")
-var ab = document.createElement("a")
-var refb = document.createAttribute("href")
-refb.value = "steam://openurl/"+encodeURI(window.location)
-var btnb = document.createElement("button")
-var tb = document.createTextNode(btntxt)
-btnb.append(tb)
-ab.setAttributeNode(refb)
-ab.append(btnb)
-span.append(ab)
-f.append(span)
+
+let str = browser.i18n.getMessage("steamButtonText")
+let ustr = str.toUpperCase();
+let url = "steam://openurl/" + encodeURI(window.location)
+
+const instbtn = document.getElementsByClassName('header_installsteam_btn header_installsteam_btn_green')[0].parentNode;
+instbtn.insertAdjacentHTML('afterbegin', '<div class="header_installsteam_btn header_installsteam_btn_green"><a style="background-color: #397198 !important; background-image: url(\'https://steamcdn-a.akamaihd.net/store/about/icon-steamos.svg\') !important; background-size: 13px" class="header_installsteam_btn_content" href="' + url + '">' + str + '</a></div>');
+
+if (document.querySelector("#footer_nav")) {
+	const footer_nav = document.querySelector('#footer_steam_pulldown').parentNode;
+	footer_nav.insertAdjacentHTML('afterbegin', '<a id="footer_steam_pulldown" class="pulldown btnv6_blue_hoverfade btn_small" href="' + url + '"><span>' + ustr + '</span></a>');
+} else {
+	const valve_links = document.getElementsByClassName('valve_links')[0];
+	valve_links.insertAdjacentHTML('beforeend', '<a style="padding-left: 10px;"></a> | <a style="padding-left: 10px;" href="' + url + '">' + str + '</a>');
+}
