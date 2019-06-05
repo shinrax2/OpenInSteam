@@ -1,3 +1,6 @@
+if(!browser) {
+      var browser = chrome // to support chrome
+}
 var btntxt = browser.i18n.getMessage("steamButtonText")
 var e = document.getElementsByClassName("logo")[0]
 var f = document.getElementsByClassName("footer_content")[0]
