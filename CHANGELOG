@@ -2,4 +2,5 @@ v1.2:
   initial release
 v1.3:
   added italian translation
+  improved code and visual integration
   ported to chrome (also ported v1.2 to chrome)
