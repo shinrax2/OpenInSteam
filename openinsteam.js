@@ -8,7 +8,8 @@ let str = browser.i18n.getMessage("steamButtonText")
 let ustr = str.toUpperCase();
 let url = "steam://openurl/" + encodeURI(window.location)
 
-const instbtn = document.getElementsByClassName('header_installsteam_btn header_installsteam_btn_green')[0].parentNode;
+
+const instbtn = document.getElementById('global_action_menu')
 instbtn.insertAdjacentHTML('afterbegin', '<div class="header_installsteam_btn header_installsteam_btn_green"><a style="background-color: #397198 !important; background-image: url(\'https://steamcdn-a.akamaihd.net/store/about/icon-steamos.svg\') !important; background-size: 13px" class="header_installsteam_btn_content" href="' + url + '">' + str + '</a></div>');
 
 if (document.querySelector("#footer_nav")) {
