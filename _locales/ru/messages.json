@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "Открыть в Steam",
+		"description": "Name of the extension."
+	},
+	"extensionDescription": {
+		"message": "Добавляет кнопку на сайтах Steam, которая открывает страницу в клиенте Steam.",
+		"description": "Description of the extension."
+	},
+	"steamButtonText" : {
+		"message": "Открыть в Steam",
+		"description": "Text of the Button"
+	}
+}
