@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "Open in Steam",
+		"description": "Name of the extension."
+	},
+	"extensionDescription": {
+		"message": "เพิ่มปุ่มในเว็บไซต์สตีมเพื่อเปิดหน้าในโปรแกรมสตีมไคลเอนต์",
+		"description": "Description of the extension."
+	},
+	"steamButtonText" : {
+		"message": "เปิดในโปรแกรมสตีม",
+		"description": "Text of the Button"
+	}
+}
