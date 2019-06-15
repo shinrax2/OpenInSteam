@@ -21,6 +21,24 @@
 		"js": [
 			"openinsteam.js"
 		]
+	},
+	{
+		"exclude_matches": [
+			"*://steamcommunity.com/?subsection=broadcasts*",
+			"*://steamcommunity.com/broadcast/*",
+			"*://steamcommunity.com/discussions/*",
+			"*://steamcommunity.com/groups/*",
+			"*://steamcommunity.com/app/*/discussions/*",
+			"*://steamcommunity.com/app/*/broadcasts/*",
+			"*://steamcommunity.com/market/*",
+			"*://steamcommunity.com/workshop/*"
+		],
+		"matches": [
+			"*://steamcommunity.com/*"
+		],
+		"js": [
+			"community.js"
+		]
 	}],
 	"icons" : {
 		"48" : "icons/48x48.png",
