@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "Open in Steam",
+		"description": "Name of the extension."
+	},
+	"extensionDescription": {
+		"message": "Steam sayfalarını Steam üzerinden açacak bir tuş ekler.",
+		"description": "Description of the extension."
+	},
+	"steamButtonText" : {
+		"message": "Steam'de aç",
+		"description": "Text of the Button"
+	}
+}
