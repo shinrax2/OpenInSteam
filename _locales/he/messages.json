@@ -4,11 +4,11 @@
 		"description": "Name of the extension."
 	},
 	"extensionDescription": {
-		"message": "הודעה: מוסיף כפתור באתר הבית של סטים כדי לפתוח את הדף דרך תוכנת סטים",
+		"message": "מוסיף כפתור באתר הבית של סטים כדי לפתוח את הדף דרך תוכנת סטים",
 		"description": "Description of the extension."
 	},
 	"steamButtonText" : {
-		"message": "הודעה: פותח בסטים",
+		"message": "פותח בסטים",
 		"description": "Text of the Button"
 	}
 }
