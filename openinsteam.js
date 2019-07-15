@@ -1,10 +1,14 @@
 'use strict';
 
-if(!browser) {
-	var browser = chrome // to support chrome
+// to support chrome
+if(typeof(browser) == "undefined" && typeof(chrome) !== "undefined") {
+	var i18n = chrome.i18n
+} else {
+	var i18n = browser.i18n
 }
 
-let str = browser.i18n.getMessage("steamButtonText")
+
+let str = i18n.getMessage("steamButtonText")
 let ustr = str.toUpperCase();
 let url = "steam://openurl/" + encodeURI(window.location)
 
