@@ -1,8 +1,19 @@
-v1.2:
-  initial release
+v1.3.2:
+  added button to steamcommunity page items
+  improved chrome compability code
+  added thai translation by https://github.com/PJzuza
+  added spanish translation by https://github.com/ernestin12
+  added turkish translation by https://steamcommunity.com/profiles/76561198045705212/
+  added russian translation by https://github.com/andoleal
+  added hebrew translation by https://steamcommunity.com/profiles/76561198062523599/
+  added swedish translation by https://steamcommunity.com/profiles/76561198082190849/
+  added polish translation by Rushi
+  added portuguese translation by Gabre
+v1.3.1:
+  fixed button disappearing when logged into steam webpages
 v1.3:
   added italian translation
   improved code and visual integration
   ported to chrome (also ported v1.2 to chrome)
-v1.3.1:
-  fixed button disappearing when logged into steam webpages
+v1.2:
+  initial release
