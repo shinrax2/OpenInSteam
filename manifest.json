@@ -1,45 +1,47 @@
 {
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
-	"version": "1.3.2",
+	"version": "1.3.3",
 	"author": "shinrax2",
 	"description": "__MSG_extensionDescription__",
 	"default_locale": "en",
 	
-	"content_scripts": [{
-		"exclude_matches": [
-			"*://steamcommunity.com/login*",
-			"*://steamcommunity.com/openid/login*",
-			"*://help.steampowered.com/*/wizard/Login*",
-			"*://*.steampowered.com/login*",
-			"*://store.steampowered.com/about*"
-		],
-		"matches": [
-			"*://steamcommunity.com/*",
-			"*://*.steampowered.com/*"
-		],
-		"js": [
-			"openinsteam.js"
-		]
-	},
-	{
-		"exclude_matches": [
-			"*://steamcommunity.com/?subsection=broadcasts*",
-			"*://steamcommunity.com/broadcast/*",
-			"*://steamcommunity.com/discussions/*",
-			"*://steamcommunity.com/groups/*",
-			"*://steamcommunity.com/app/*/discussions/*",
-			"*://steamcommunity.com/app/*/broadcasts/*",
-			"*://steamcommunity.com/market/*",
-			"*://steamcommunity.com/workshop/*"
-		],
-		"matches": [
-			"*://steamcommunity.com/*"
-		],
-		"js": [
-			"community.js"
-		]
-	}],
+	"content_scripts": [
+		{
+			"exclude_matches": [
+				"*://steamcommunity.com/login*",
+				"*://steamcommunity.com/openid/login*",
+				"*://help.steampowered.com/*/wizard/Login*",
+				"*://*.steampowered.com/login*",
+				"*://store.steampowered.com/about*"
+			],
+			"matches": [
+				"*://steamcommunity.com/*",
+				"*://*.steampowered.com/*"
+			],
+			"js": [
+				"openinsteam.js"
+			]
+		},
+		{
+			"exclude_matches": [
+				"*://steamcommunity.com/?subsection=broadcasts*",
+				"*://steamcommunity.com/broadcast/*",
+				"*://steamcommunity.com/discussions/*",
+				"*://steamcommunity.com/groups/*",
+				"*://steamcommunity.com/app/*/discussions/*",
+				"*://steamcommunity.com/app/*/broadcasts/*",
+				"*://steamcommunity.com/market/*",
+				"*://steamcommunity.com/workshop/*"
+			],
+			"matches": [
+				"*://steamcommunity.com/*"
+			],
+			"js": [
+				"community.js"
+			]
+		}
+	],
 	"icons" : {
 		"48" : "icons/48x48.png",
 		"96" : "icons/96x96.png"
